@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.DAOController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="788.0" prefWidth="864.0" style="-fx-background-color: F5DEB3;">
+         <children>
+            <ImageView fitHeight="1072.0" fitWidth="1254.0" layoutX="-109.0" layoutY="-106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/0a18341ee691cba6aa2a1a6040b97da7.jpg" />
+               </image>
+            </ImageView>
+
+            <Pane layoutX="16.0" layoutY="26.0" prefHeight="737.0" prefWidth="833.0" style="-fx-background-color: FDF5E6; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <children>
+                  <Label layoutX="265.0" layoutY="74.0" text="SISTEMA DE FICHADO" textFill="#6b3c02">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Label>
+
+                  <Label layoutX="227.0" layoutY="116.0" text="INTELIGENCIA DE LA MARINA" textFill="#d4af37c2">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                     <effect>
+                        <Glow level="0.08" />
+                     </effect>
+                  </Label>
+
+                  <Pane layoutX="54.0" layoutY="155.0" prefHeight="413.0" prefWidth="347.0" style="-fx-border-color: #2F1B10; -fx-border-style: dashed; -fx-border-width: 4; -fx-border-insets: 5;">
+                     <children>
+                        <GridPane layoutX="47.0" layoutY="12.0" maxWidth="1.7976931348623157E308" prefHeight="376.0" prefWidth="275.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="141.0" minWidth="0.0" prefWidth="109.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="233.0" minWidth="10.0" prefWidth="124.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Text fill="#2f1b10" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE:"><font><Font name="Georgia Bold" size="17.0" /></font><effect><DropShadow><color><Color red="1.0" green="1.0" blue="1.0" /></color></DropShadow></effect></Text>
+                              <Text fill="#2f1b10" strokeType="OUTSIDE" strokeWidth="0.0" text="PUESTO:" GridPane.rowIndex="1"><font><Font name="Georgia Bold" size="17.0" /></font><effect><DropShadow><color><Color red="1.0" green="1.0" blue="1.0" /></color></DropShadow></effect></Text>
+                              <Text fill="#2f1b10" strokeType="OUTSIDE" strokeWidth="0.0" text="TRIPULACIÓN:" GridPane.rowIndex="2"><font><Font name="Georgia Bold" size="15.0" /></font><effect><DropShadow><color><Color red="1.0" green="1.0" blue="1.0" /></color></DropShadow></effect></Text>
+                              <Text fill="#2f1b10" strokeType="OUTSIDE" strokeWidth="0.0" text="RECOMPENSA:" GridPane.rowIndex="3"><font><Font name="Georgia Bold" size="15.0" /></font><effect><DropShadow><color><Color red="1.0" green="1.0" blue="1.0" /></color></DropShadow></effect></Text>
+                              <Text fill="#2f1b10" strokeType="OUTSIDE" strokeWidth="0.0" text="EDAD:" GridPane.rowIndex="4"><font><Font name="Georgia Bold" size="17.0" /></font><effect><DropShadow><color><Color red="1.0" green="1.0" blue="1.0" /></color></DropShadow></effect></Text>
+                              <Text fill="#2f1b10" strokeType="OUTSIDE" strokeWidth="0.0" text="FRUTA:" GridPane.rowIndex="5"><font><Font name="Georgia Bold" size="17.0" /></font><effect><DropShadow><color><Color red="1.0" green="1.0" blue="1.0" /></color></DropShadow></effect></Text>
+                              <Text fill="#2f1b10" strokeType="OUTSIDE" strokeWidth="0.0" text="ESTADO:" GridPane.rowIndex="6"><font><Font name="Georgia Bold" size="17.0" /></font><effect><DropShadow><color><Color red="1.0" green="1.0" blue="1.0" /></color></DropShadow></effect></Text>
+
+                              <TextField fx:id="txtNombre" style="-fx-background-color: TRANSPARENT; -fx-border-color: #5C4033; -fx-border-width: 0 0 2 0; -fx-text-fill: #191970; -fx-font-family: 'Courier New';" GridPane.columnIndex="1" />
+                              <TextField fx:id="txtPuesto" style="-fx-background-color: TRANSPARENT; -fx-border-color: #5C4033; -fx-border-width: 0 0 2 0; -fx-text-fill: #191970; -fx-font-family: 'Courier New';" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtTripulacion" style="-fx-background-color: TRANSPARENT; -fx-border-color: #5C4033; -fx-border-width: 0 0 2 0; -fx-text-fill: #191970; -fx-font-family: 'Courier New';" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtRecompensa" style="-fx-background-color: TRANSPARENT; -fx-border-color: #5C4033; -fx-border-width: 0 0 2 0; -fx-text-fill: #191970; -fx-font-family: 'Courier New';" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txtEdad" style="-fx-background-color: TRANSPARENT; -fx-border-color: #5C4033; -fx-border-width: 0 0 2 0; -fx-text-fill: #191970; -fx-font-family: 'Courier New';" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="txtFruta" style="-fx-background-color: TRANSPARENT; -fx-border-color: #5C4033; -fx-border-width: 0 0 2 0; -fx-text-fill: #191970; -fx-font-family: 'Courier New';" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="txtEstado" style="-fx-background-color: TRANSPARENT; -fx-border-color: #5C4033; -fx-border-width: 0 0 2 0; -fx-text-fill: #191970; -fx-font-family: 'Courier New';" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                           </children>
+                        </GridPane>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6100000143051147" green="0.34648001194000244" blue="0.024399999529123306" opacity="0.40839695930480957" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+
+                  <Pane layoutX="448.0" layoutY="197.0" prefHeight="300.0" prefWidth="326.0" style="-fx-border-color: #2F1B10; -fx-border-style: dashed; -fx-border-width: 4; -fx-border-insets: 5;">
+                     <children>
+                        <Button layoutX="47.0" layoutY="38.0" mnemonicParsing="false" onAction="#registrar" prefHeight="38.0" prefWidth="235.0" style="-fx-background-color: linear-gradient(#b02a2a, #7a1d1d); -fx-background-radius: 8; -fx-border-color: #f0c04a; -fx-border-width: 2; -fx-border-radius: 6; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: system;" text="[ REGISTRAR ]">
+                           <effect><DropShadow offsetY="6.0" spread="0.1"><color><Color opacity="0.57" /></color></DropShadow></effect>
+                        </Button>
+                        <Button layoutX="47.0" layoutY="96.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="38.0" prefWidth="235.0" style="-fx-background-color: linear-gradient(#b02a2a, #7a1d1d); -fx-background-radius: 8; -fx-border-color: #f0c04a; -fx-border-width: 2; -fx-border-radius: 6; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: system;" text="[ ACTUALIZAR ]">
+                           <effect><DropShadow offsetY="6.0" spread="0.1"><color><Color opacity="0.57" /></color></DropShadow></effect>
+                        </Button>
+                        <Button layoutX="47.0" layoutY="150.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="235.0" style="-fx-background-color: linear-gradient(#b02a2a, #7a1d1d); -fx-background-radius: 8; -fx-border-color: #f0c04a; -fx-border-width: 2; -fx-border-radius: 6; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: system;" text="[ ELIMINAR ]">
+                           <effect><DropShadow offsetY="6.0" spread="0.1"><color><Color opacity="0.57" /></color></DropShadow></effect>
+                        </Button>
+                        <Button layoutX="46.0" layoutY="217.0" mnemonicParsing="false" onAction="#leerTodos" prefHeight="57.0" prefWidth="235.0" style="-fx-background-color: linear-gradient(#b02a2a, #7a1d1d); -fx-background-radius: 8; -fx-border-color: #f0c04a; -fx-border-width: 2; -fx-border-radius: 6; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: system;" text="[ LEER TODOS LOS DATOS ]">
+                           <effect><DropShadow offsetY="6.0" spread="0.1"><color><Color opacity="0.57" /></color></DropShadow></effect>
+                        </Button>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6100000143051147" green="0.34648001194000244" blue="0.024399999529123306" opacity="0.4541984796524048" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <ImageView fitHeight="67.0" fitWidth="207.0" layoutX="310.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/MARINA.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="txtMensajesCRUD" editable="false" layoutX="57.0" layoutY="578.0" prefHeight="124.0" prefWidth="717.0" promptText="Esperando datos..." style="-fx-background-color: #1A1A1A; -fx-control-inner-background: #1A1A1A; -fx-text-fill: #00FF41; -fx-font-family: Consolas; -fx-border-color: #D4AF37; -fx-border-width: 3; -fx-border-radius: 5;" stylesheets="@../css/barra.css" wrapText="true">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                     <font>
+                        <Font name="Consolas" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextArea>
+               </children>
+            </Pane>
+
+            <MenuBar layoutX="-11.0" layoutY="-11.0" prefHeight="0.0" prefWidth="1225.0" style="-fx-background-color: #2F1B10; -fx-border-color: #D4AF37; -fx-border-width: 0 0 2 0;" stylesheets="@../css/menubar.css">
+               <menus>
+                  <Menu mnemonicParsing="false" style="-fx-text-fill: #D4AF37; fx-font-weight: bold;" text="Consultas Rápidas">
+                     <items><MenuItem mnemonicParsing="false" onAction="#irAInicio" text="Ir al Inicio" /></items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Avanzado">
+                     <items><MenuItem mnemonicParsing="false" onAction="#irACRUD" text="Recargar CRUD" /></items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

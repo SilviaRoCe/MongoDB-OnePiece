@@ -1,0 +1,76 @@
+/* 1. El fondo de la barra (El carril) */
+.text-area .scroll-bar .track {
+    -fx-background-color: #2F1B10; /* Madera oscura (Mismo que el MenuBar) */
+    -fx-border-color: transparent;
+    -fx-background-radius: 5;
+}
+
+/* 2. La pieza que se mueve (El pulgar/Thumb) */
+.text-area .scroll-bar .thumb {
+    -fx-background-color: #D4AF37; /* Dorado Tesoro */
+    -fx-background-radius: 5;      /* Redondeado */
+    -fx-background-insets: 2;      /* Un pequeño margen para que no toque los bordes */
+}
+
+/* 3. Efecto al pasar el ratón por encima del dorado */
+.text-area .scroll-bar .thumb:hover {
+    -fx-background-color: #FFD700; /* Oro más brillante al tocarlo */
+}
+
+/* 4. Los botones de las flechas (Arriba/Abajo) */
+.text-area .scroll-bar .increment-button,
+.text-area .scroll-bar .decrement-button {
+    -fx-background-color: #2F1B10; /* Fondo madera */
+    -fx-border-color: transparent;
+}
+
+/* 5. El color de las flechitas (triángulos) dentro de los botones */
+.text-area .scroll-bar .increment-arrow,
+.text-area .scroll-bar .decrement-arrow {
+    -fx-background-color: #D4AF37; /* Flechas doradas */
+
+    /* --- ESTILO BLINDADO PARA LA CONSOLA --- */
+
+    #txtMensajesCRUD {
+        /* 1. Fuente y Tamaño FIJOS */
+        -fx-font-family: 'Consolas', 'Monospaced';
+        -fx-font-size: 14px;
+
+        /* 2. Colores Base */
+        -fx-text-fill: #00FF41;       /* Texto Verde Hacker */
+        -fx-background-color: #1A1A1A; /* Fondo Negro */
+        -fx-control-inner-background: #1A1A1A; /* Asegura el fondo interior */
+
+        /* 3. Eliminar efectos raros de foco */
+        -fx-background-insets: 0;
+        -fx-background-radius: 0;
+    }
+
+    /* Cuando haces clic dentro (Foco) - EVITA CAMBIOS */
+    #txtMensajesCRUD:focused {
+        -fx-background-color: #1A1A1A;
+        -fx-control-inner-background: #1A1A1A;
+        -fx-text-fill: #00FF41;
+    }
+
+    /* --- SOLUCIÓN A LA ZONA BLANCA (SELECCIÓN) --- */
+    /* Esto cambia el color de cuando seleccionas texto con el ratón */
+
+    .text-area .content {
+        -fx-background-color: #1A1A1A;
+    }
+
+    .text-area:focused .content {
+        -fx-background-color: #1A1A1A;
+    }
+
+    /* El fondo del texto seleccionado (ahora será marrón oscuro en vez de azul feo) */
+    .text-area .highlight {
+        -fx-fill: #4A2E1D;
+    }
+
+    /* El color de las letras seleccionadas (para que se lean bien) */
+    .text-area .highlight-text {
+        -fx-fill: white;
+    }
+}

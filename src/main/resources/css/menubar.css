@@ -1,0 +1,43 @@
+/* --- 1. LA BARRA PRINCIPAL --- */
+.menu-bar {
+    -fx-background-color: #2F1B10; /* Madera oscura */
+    -fx-border-color: #D4AF37;     /* Línea dorada abajo */
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 5;
+}
+
+/* --- 2. LAS LETRAS DEL MENÚ (File, Edit...) --- */
+.menu-bar .label {
+    -fx-text-fill: #D4AF37; /* Texto Dorado */
+    -fx-font-weight: bold;
+    -fx-font-family: 'System'; /* O 'Impact' si quieres ser más agresivo */
+}
+
+/* --- 3. CUANDO PASAS EL RATÓN POR ENCIMA --- */
+.menu-bar .menu-button:hover,
+.menu-bar .menu-button:focused,
+.menu-bar .menu-button:showing {
+    -fx-background-color: #4A2E1D; /* Madera un poco más clara */
+    -fx-background-radius: 4;
+}
+
+/* --- 4. EL DESPLEGABLE (La caja que cae) --- */
+.context-menu {
+    -fx-background-color: #2F1B10; /* Fondo oscuro */
+    -fx-border-color: #D4AF37;     /* Borde dorado */
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+}
+
+/* --- 5. LOS ÍTEMS DENTRO DE LA LISTA --- */
+.menu-item .label {
+    -fx-text-fill: #F5DEB3; /* Color Hueso/Pergamino para que se lea bien */
+}
+
+/* --- 6. CUANDO SELECCIONAS UNA OPCIÓN (Hover en ítem) --- */
+.menu-item:focused {
+    -fx-background-color: #8B0000; /* Rojo Almirante al seleccionar */
+}
+.menu-item:focused .label {
+    -fx-text-fill: white; /* Texto blanco al seleccionar */
+}
